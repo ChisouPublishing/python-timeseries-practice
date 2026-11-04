@@ -1,0 +1,301 @@
+{
+  "plan": {
+    "version": "japan-monthly-v1",
+    "registered_date": "2026-11-03",
+    "amendment_before_model_execution": "Separate model selection (2020-2021), interval calibration (2022-2023) and final test (2024); no model performance inspected before this change.",
+    "selection_months": [
+      "2020-01",
+      "2021-12"
+    ],
+    "calibration_months": [
+      "2022-01",
+      "2023-12"
+    ],
+    "test_months": [
+      "2024-01",
+      "2024-12"
+    ],
+    "fold_months": [
+      [
+        "2020-01",
+        "2020-08"
+      ],
+      [
+        "2020-09",
+        "2021-04"
+      ],
+      [
+        "2021-05",
+        "2021-12"
+      ]
+    ],
+    "main_items": [
+      "356",
+      "352"
+    ],
+    "lag_months": [
+      3,
+      4,
+      6,
+      12,
+      13,
+      24
+    ],
+    "available_history_lag": 3,
+    "availability_scenario": "Observation month +2 months, day 15, 08:30 JST; scenario, not verified historical release dates.",
+    "origin": "Previous month day 15, next Japan business day, 09:00 JST",
+    "data_vintage": "2026-11-03 downloaded revised series, not first-release vintages",
+    "refit": "At each origin, only target labels with month <= target_month-3 are used.",
+    "trials_per_item": 24,
+    "seed": 42,
+    "interval_nominal": 0.9,
+    "adoption_min_cv_improvement": 0.05,
+    "adoption_max_peak_mae_ratio": 1.1,
+    "business_peak_months": {
+      "356": [
+        6,
+        7,
+        8
+      ],
+      "352": [
+        2,
+        12
+      ]
+    },
+    "adoption_criteria_status": "Teaching assumptions, not agreed with a real retailer",
+    "sarima": {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal_order": [
+        0,
+        1,
+        1,
+        12
+      ],
+      "maxiter": 80
+    },
+    "ets": {
+      "trend": "add",
+      "damped_trend": true,
+      "seasonal": "add",
+      "seasonal_periods": 12
+    },
+    "default_lightgbm": {
+      "n_estimators": 100,
+      "learning_rate": 0.05,
+      "num_leaves": 7,
+      "min_child_samples": 10
+    },
+    "default_ridge_alpha": 10.0
+  },
+  "signature": {
+    "15_kakei/02_forecast.py": "a8dc9871ed4af84da64e9597e8b322b24ba0da08918196283688860e11dad579",
+    "japan_data.py": "6259d856c1b3d695e349edfe11d39f916f775b9364b2a9a27a8780e64d66ddd7",
+    "data/japan/experiment-plan.json": "0719eb11adbb4c049644dda1696b9c63b8472ebc70b55ae4207ccfba81daba0c",
+    "data/japan/source-manifest.json": "50ebc04addc3790ec63e99f36182316b77af24fdbd713ba30d5b0c57b83ce952"
+  },
+  "items": {
+    "356": {
+      "item_name": "アイスクリーム・シャーベット",
+      "selected_model": "ets",
+      "best_params": {
+        "family": "ridge",
+        "alpha": 9.608240298359714
+      },
+      "selection_metrics": {
+        "seasonal": {
+          "mae": 71.125,
+          "wape_percent": 8.425053057598342,
+          "bias": -18.625,
+          "peak_mae": 158.83333333333334,
+          "mean_fit_seconds": 3.2777898013591766e-06,
+          "fallbacks": 0
+        },
+        "ets": {
+          "mae": 60.608153093439206,
+          "wape_percent": 7.1792886542744245,
+          "bias": -1.9230191972284203,
+          "peak_mae": 130.21036475787128,
+          "mean_fit_seconds": 0.029958876761763047,
+          "fallbacks": 0
+        },
+        "sarima": {
+          "mae": 87.8675169048601,
+          "wape_percent": 10.408274052201975,
+          "bias": -27.5901512700585,
+          "peak_mae": 195.54051662181033,
+          "mean_fit_seconds": 0.05372292862739414,
+          "fallbacks": 3
+        },
+        "ridge": {
+          "mae": 67.0739051689706,
+          "wape_percent": 7.945183969474825,
+          "bias": 15.037553496011418,
+          "peak_mae": 124.97033612578112,
+          "mean_fit_seconds": 0.0008355259778909385,
+          "fallbacks": 0
+        },
+        "lightgbm": {
+          "mae": 93.65240828585677,
+          "wape_percent": 11.093518576874597,
+          "bias": 2.1930909145431507,
+          "peak_mae": 158.36775002188043,
+          "mean_fit_seconds": 0.002568576504321148,
+          "fallbacks": 0
+        },
+        "optuna": {
+          "mae": 67.08565831648664,
+          "wape_percent": 7.946576178844477,
+          "bias": 15.457226281031682,
+          "peak_mae": 125.11242782105766,
+          "mean_fit_seconds": 0.0008063681501274308,
+          "fallbacks": 0
+        }
+      },
+      "calibration": {
+        "seasonal": {
+          "absolute_error_radius": 151.0,
+          "n": 24,
+          "order_statistic": 23
+        },
+        "ets": {
+          "absolute_error_radius": 231.96641487811917,
+          "n": 24,
+          "order_statistic": 23
+        },
+        "sarima": {
+          "absolute_error_radius": 187.0536262447497,
+          "n": 24,
+          "order_statistic": 23
+        },
+        "ridge": {
+          "absolute_error_radius": 211.3406601322622,
+          "n": 24,
+          "order_statistic": 23
+        },
+        "lightgbm": {
+          "absolute_error_radius": 222.84284572168804,
+          "n": 24,
+          "order_statistic": 23
+        },
+        "optuna": {
+          "absolute_error_radius": 209.8201726901425,
+          "n": 24,
+          "order_statistic": 23
+        }
+      },
+      "trials": {
+        "COMPLETE": 17,
+        "PRUNED": 7,
+        "FAIL": 0
+      }
+    },
+    "352": {
+      "item_name": "チョコレート",
+      "selected_model": "seasonal",
+      "best_params": {
+        "family": "ridge",
+        "alpha": 2.4720856093055286
+      },
+      "selection_metrics": {
+        "seasonal": {
+          "mae": 23.041666666666668,
+          "wape_percent": 4.1054194506310315,
+          "bias": 4.958333333333333,
+          "peak_mae": 45.0,
+          "mean_fit_seconds": 3.4288774865369e-06,
+          "fallbacks": 0
+        },
+        "ets": {
+          "mae": 21.69188075597061,
+          "wape_percent": 3.8649230745604655,
+          "bias": 11.383787128886082,
+          "peak_mae": 50.80728162984502,
+          "mean_fit_seconds": 0.030182235990650952,
+          "fallbacks": 0
+        },
+        "sarima": {
+          "mae": 22.57940774898834,
+          "wape_percent": 4.023057059953379,
+          "bias": 2.3509052531256813,
+          "peak_mae": 44.117595885646864,
+          "mean_fit_seconds": 0.046044567541684955,
+          "fallbacks": 3
+        },
+        "ridge": {
+          "mae": 35.26427674494201,
+          "wape_percent": 6.2831673487647235,
+          "bias": 14.457229238600926,
+          "peak_mae": 49.712115477524094,
+          "mean_fit_seconds": 0.0008409443932274977,
+          "fallbacks": 0
+        },
+        "lightgbm": {
+          "mae": 67.88237337953431,
+          "wape_percent": 12.094854945128606,
+          "bias": -2.511971895982782,
+          "peak_mae": 173.1701890007535,
+          "mean_fit_seconds": 0.0025982861989177763,
+          "fallbacks": 0
+        },
+        "optuna": {
+          "mae": 31.98971654888361,
+          "wape_percent": 5.699726779311112,
+          "bias": 16.028813698385935,
+          "peak_mae": 43.39960543496326,
+          "mean_fit_seconds": 0.0008168281250012418,
+          "fallbacks": 0
+        }
+      },
+      "calibration": {
+        "seasonal": {
+          "absolute_error_radius": 83.0,
+          "n": 24,
+          "order_statistic": 23
+        },
+        "ets": {
+          "absolute_error_radius": 87.9539966712191,
+          "n": 24,
+          "order_statistic": 23
+        },
+        "sarima": {
+          "absolute_error_radius": 83.37084283226443,
+          "n": 24,
+          "order_statistic": 23
+        },
+        "ridge": {
+          "absolute_error_radius": 81.79875390952861,
+          "n": 24,
+          "order_statistic": 23
+        },
+        "lightgbm": {
+          "absolute_error_radius": 90.56744928298883,
+          "n": 24,
+          "order_statistic": 23
+        },
+        "optuna": {
+          "absolute_error_radius": 83.53052859833986,
+          "n": 24,
+          "order_statistic": 23
+        }
+      },
+      "trials": {
+        "COMPLETE": 16,
+        "PRUNED": 8,
+        "FAIL": 0
+      }
+    }
+  },
+  "versions": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.2.6",
+    "statsmodels": "0.15.0",
+    "lightgbm": "4.7.0",
+    "optuna": "5.0.0",
+    "sklearn": "1.7.2"
+  }
+}

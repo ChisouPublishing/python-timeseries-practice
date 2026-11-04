@@ -1,0 +1,74 @@
+[
+  {
+    "item": "356",
+    "target": "2020-01",
+    "model": "sarima",
+    "message": "Maximum Likelihood optimization failed to converge. Check mle_retvals"
+  },
+  {
+    "item": "356",
+    "target": "2020-01",
+    "model": "sarima",
+    "message": "収束条件を満たさない、または非有限の予測"
+  },
+  {
+    "item": "356",
+    "target": "2020-02",
+    "model": "sarima",
+    "message": "Maximum Likelihood optimization failed to converge. Check mle_retvals"
+  },
+  {
+    "item": "356",
+    "target": "2020-02",
+    "model": "sarima",
+    "message": "収束条件を満たさない、または非有限の予測"
+  },
+  {
+    "item": "356",
+    "target": "2020-03",
+    "model": "sarima",
+    "message": "Maximum Likelihood optimization failed to converge. Check mle_retvals"
+  },
+  {
+    "item": "356",
+    "target": "2020-03",
+    "model": "sarima",
+    "message": "収束条件を満たさない、または非有限の予測"
+  },
+  {
+    "item": "352",
+    "target": "2020-01",
+    "model": "sarima",
+    "message": "Maximum Likelihood optimization failed to converge. Check mle_retvals"
+  },
+  {
+    "item": "352",
+    "target": "2020-01",
+    "model": "sarima",
+    "message": "収束条件を満たさない、または非有限の予測"
+  },
+  {
+    "item": "352",
+    "target": "2020-02",
+    "model": "sarima",
+    "message": "Maximum Likelihood optimization failed to converge. Check mle_retvals"
+  },
+  {
+    "item": "352",
+    "target": "2020-02",
+    "model": "sarima",
+    "message": "収束条件を満たさない、または非有限の予測"
+  },
+  {
+    "item": "352",
+    "target": "2020-03",
+    "model": "sarima",
+    "message": "Maximum Likelihood optimization failed to converge. Check mle_retvals"
+  },
+  {
+    "item": "352",
+    "target": "2020-03",
+    "model": "sarima",
+    "message": "収束条件を満たさない、または非有限の予測"
+  }
+]

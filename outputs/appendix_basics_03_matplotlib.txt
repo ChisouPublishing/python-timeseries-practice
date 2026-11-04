@@ -1,0 +1,2 @@
+保存: figures/appendix_basics_forecast.svg
+実測・予測・区間の対象日一致: True

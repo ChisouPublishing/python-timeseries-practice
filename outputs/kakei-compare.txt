@@ -1,0 +1,11 @@
+selection_predictions.csv rows 288 288 identical(excluding timing) True
+calibration_predictions.csv rows 288 288 identical(excluding timing) True
+test_predictions.csv rows 144 144 identical(excluding timing) True
+score_ledger.csv rows 144 144 identical(excluding timing) True
+trials_356.csv rows 24 24 identical(excluding timing) True
+trials_352.csv rows 24 24 identical(excluding timing) True
+test_metrics.json True
+meeting_report.json True
+operations_check.json True
+meeting_report.md True
+selection.json keys differing: ['signature']

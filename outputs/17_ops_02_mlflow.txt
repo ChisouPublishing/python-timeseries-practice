@@ -1,0 +1,6 @@
+joblibで読み戻した予測が一致: True
+記録した実行数: 1
+記録したパラメータ: ['data_sha256', 'learning_rate', 'n_estimators', 'random_state', 'train_end']
+記録した評価値 test_mae: 3568.0
+登録したモデルの版: 1
+登録モデルを読み戻した予測が一致: True

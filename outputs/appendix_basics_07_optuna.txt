@@ -1,0 +1,5 @@
+完了した試行数: 4
+選択設定: {'alpha': 1.0}
+最良CV平均MAE=2.101
+固定後の最終28日 MAE=1.626
+履歴: outputs/appendix_basics_optuna_trials.csv

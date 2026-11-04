@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="350" viewBox="0 0 850 350" role="img" aria-label="運用時に提案する予測実行・予測明細・実績の台帳。実行と明細は1対多。実績は系列と対象日、確定版で後から照合する。実装済みの配布CSVとは異なる設計例。">
+<style>text{font-family:"Hiragino Sans","Noto Sans JP",sans-serif;font-size:18px;fill:#172338}.title{font-size:20px;font-weight:700}.small{font-size:17px;fill:#4b5f75}</style>
+<rect x="4" y="4" width="250" height="244" rx="8" fill="#f4f8fc" stroke="#487daa" stroke-width="1.5"/>
+<text x="20" y="34" class="title">予測実行</text>
+<text x="20" y="68">PK  run_id</text>
+<text x="20" y="97">origin</text>
+<text x="20" y="126">model_version</text>
+<text x="20" y="155">data_version</text>
+<text x="20" y="184">学習ラベルの確定日</text>
+<rect x="300" y="4" width="250" height="244" rx="8" fill="#f4f8fc" stroke="#487daa" stroke-width="1.5"/>
+<text x="316" y="34" class="title">予測明細</text>
+<text x="316" y="68">PK・FK  run_id</text>
+<text x="316" y="97">PK  series_id</text>
+<text x="316" y="126">PK  target_date</text>
+<text x="316" y="155">prediction</text>
+<text x="316" y="184">fallback_reason</text>
+<rect x="596" y="4" width="250" height="244" rx="8" fill="#f4f8fc" stroke="#487daa" stroke-width="1.5"/>
+<text x="612" y="34" class="title">実績の各版</text>
+<text x="612" y="68">PK  series_id</text>
+<text x="612" y="97">PK  target_date</text>
+<text x="612" y="126">PK  actual_version</text>
+<text x="612" y="155">actual / status</text>
+<text x="612" y="184">available_at</text>
+<path d="M254 130 H300 M264 119 V141 M286 130 L300 119 M286 130 L300 141" fill="none" stroke="#487daa" stroke-width="2"/>
+<text x="260" y="105">1:N</text>
+<path d="M550 130 H596" fill="none" stroke="#d9822b" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="556" y="105">照合</text>
+<text x="4" y="294" class="small">設計例。実績は対象日だけでなく、系列・確定時刻・版を選んで結合する。</text>
+<text x="4" y="328" class="small">本書の配布CSVにこの3テーブルが実装済み、という意味ではない。</text>
+</svg>

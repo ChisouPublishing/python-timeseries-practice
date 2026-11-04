@@ -1,0 +1,27 @@
+{
+  "python": "3.12.11",
+  "pandas": "2.3.3",
+  "numpy": "2.2.6",
+  "optuna": "5.0.0",
+  "train_rows": 1800,
+  "eval_rows": 140,
+  "train_days": 90,
+  "eval_days": 7,
+  "stockout_hours": 6711,
+  "observed_hours": 28800,
+  "zero_hours": 18114,
+  "zero_and_stockout_hours": 6438,
+  "previous_stockout_alerts": 64,
+  "metrics": {
+    "all_observed": {
+      "n": 140,
+      "baseline": 0.6142857142857143,
+      "stock_aware": 0.6842857142857143
+    },
+    "no_stockout": {
+      "n": 77,
+      "baseline": 0.5623376623376622,
+      "stock_aware": 0.564935064935065
+    }
+  }
+}

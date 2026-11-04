@@ -1,0 +1,16 @@
+date        datetime64[ns]
+store_id             int64
+sales              float64
+promo                int64
+変換後の型: datetime64[ns]
+インデックス: DatetimeIndex / None
+asfreq後の行数: 731 / 頻度: <Day>
+DST切替日を含む日次: [Timestamp('2024-03-09 00:00:00-0500', tz='America/New_York'), Timestamp('2024-03-10 00:00:00-0500', tz='America/New_York'), Timestamp('2024-03-11 00:00:00-0400', tz='America/New_York')]
+UTCへ変換: [Timestamp('2024-03-09 05:00:00+0000', tz='UTC'), Timestamp('2024-03-10 05:00:00+0000', tz='UTC'), Timestamp('2024-03-11 04:00:00+0000', tz='UTC')]
+現地の1日: 2024-03-10 00:00:00-05:00 〜 2024-03-11 00:00:00-04:00 / 実時間: 23.0 時間
+欠損: 8 件
+重複した日付: 0 件
+図: figures/ch03_missing.svg
+図: figures/ch03_stl.svg
+季節成分の振幅: 250.9
+図: figures/ch03_overlay.svg

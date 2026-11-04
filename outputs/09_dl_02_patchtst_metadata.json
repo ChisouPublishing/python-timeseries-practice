@@ -1,0 +1,28 @@
+{
+  "recorded_at": "2026-11-04T01:56:20.835560+00:00",
+  "python": "3.12.11",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "accelerator": "cpu",
+  "gpu_used": false,
+  "torch": "2.14.0",
+  "neuralforecast": "3.3.0",
+  "torch_cpu_threads": 12,
+  "timing_scope": "nf.fit(df=train) only; excludes construction and prediction",
+  "timings": [
+    {
+      "seed": 42,
+      "fit_seconds": 6.957467207685113
+    },
+    {
+      "seed": 43,
+      "fit_seconds": 6.704881374724209
+    },
+    {
+      "seed": 44,
+      "fit_seconds": 6.6415821253322065
+    }
+  ],
+  "script_sha256": "3cd1ebd9a31cdeddd30cc2c6151791ae1c754c998706aa62467f9f3a772f5f06",
+  "retail_data_sha256": "867e166cae20c9138f85dcc07a4572fa354d92a3997fd5f64bfb83f2b4e08085"
+}

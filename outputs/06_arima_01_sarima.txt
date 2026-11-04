@@ -1,0 +1,14 @@
+図: figures/ch06_acf_pacf.svg
+水準: ADF p=0.9919 / KPSS p=0.0100
+対数: ADF p=0.4224 / KPSS p=0.0100
+AIC: -332.62
+季節ナイーブ MAE: 71.2 / RMSE: 77.0
+SARIMA       MAE: 43.8 / RMSE: 48.3
+改善率（MAE）: 38.6 %
+図: figures/ch06_forecast.svg
+auto_arima の次数: (2, 0, 0) (0, 1, 1, 12) / AIC: -393.54
+auto_arima MAE: 10.6
+    lb_stat  lb_pvalue
+12   15.825      0.199
+24   18.594      0.773
+図: figures/ch06_diagnostics.svg

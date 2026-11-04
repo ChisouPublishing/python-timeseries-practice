@@ -1,0 +1,35 @@
+# Internal records and backups
+tmp/
+backup/
+backups/
+VALIDATION.md
+validation.log
+code_check_*.md
+fix_*.md
+
+# Local environment and notebook checkpoints
+.DS_Store
+.venv/
+venv/
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Generated search history, training logs, datasets and models
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.log
+catboost_info/
+data/
+*.zip
+*.pt
+*.pth
+*.pkl
+*.joblib
+# MLflowの実行記録（17_ops/02_mlflow.py が毎回作り直す）とjoblibの保存物
+outputs/mlflow/
+outputs/17_ops_pipeline.joblib

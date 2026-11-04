@@ -1,0 +1,126 @@
+{
+  "356": {
+    "seasonal": {
+      "mae": 60.333333333333336,
+      "wape_percent": 5.889051569871482,
+      "bias": -59.666666666666664,
+      "peak_mae": 62.333333333333336,
+      "mean_fit_seconds": 4.031268569330375e-06,
+      "fallbacks": 0,
+      "coverage_percent": 100.0,
+      "mean_width": 302.0
+    },
+    "ets": {
+      "mae": 69.97555213184233,
+      "wape_percent": 6.830214946983146,
+      "bias": -20.90569585743022,
+      "peak_mae": 110.46619386132693,
+      "mean_fit_seconds": 0.0346611839098235,
+      "fallbacks": 0,
+      "coverage_percent": 100.0,
+      "mean_width": 463.9328297562385
+    },
+    "sarima": {
+      "mae": 76.31472658970546,
+      "wape_percent": 7.448972824763832,
+      "bias": -76.31472658970546,
+      "peak_mae": 91.4827076815596,
+      "mean_fit_seconds": 0.06006232292080919,
+      "fallbacks": 0,
+      "coverage_percent": 100.0,
+      "mean_width": 374.1072524894994
+    },
+    "ridge": {
+      "mae": 46.18612175920569,
+      "wape_percent": 4.508162201972249,
+      "bias": -25.852437561500654,
+      "peak_mae": 66.52437989829423,
+      "mean_fit_seconds": 0.0009345103753730655,
+      "fallbacks": 0,
+      "coverage_percent": 100.0,
+      "mean_width": 422.6813202645244
+    },
+    "lightgbm": {
+      "mae": 60.15975513941924,
+      "wape_percent": 5.87210884718587,
+      "bias": -32.47869546092358,
+      "peak_mae": 137.42330607405378,
+      "mean_fit_seconds": 0.006126333454934259,
+      "fallbacks": 0,
+      "coverage_percent": 100.0,
+      "mean_width": 445.6856914433761
+    },
+    "optuna": {
+      "mae": 45.85507898439965,
+      "wape_percent": 4.475849583640765,
+      "bias": -25.495322348894348,
+      "peak_mae": 65.16785445636758,
+      "mean_fit_seconds": 0.0008682916328931848,
+      "fallbacks": 0,
+      "coverage_percent": 100.0,
+      "mean_width": 419.640345380285
+    }
+  },
+  "352": {
+    "seasonal": {
+      "mae": 27.833333333333332,
+      "wape_percent": 4.662199888330542,
+      "bias": -25.666666666666668,
+      "peak_mae": 36.0,
+      "mean_fit_seconds": 3.520709772904714e-06,
+      "fallbacks": 0,
+      "coverage_percent": 100.0,
+      "mean_width": 166.0
+    },
+    "ets": {
+      "mae": 31.320290711034744,
+      "wape_percent": 5.246279851094598,
+      "bias": -15.022766685194833,
+      "peak_mae": 43.70848907000533,
+      "mean_fit_seconds": 0.03330091666430235,
+      "fallbacks": 0,
+      "coverage_percent": 100.0,
+      "mean_width": 175.9079933424382
+    },
+    "sarima": {
+      "mae": 30.686333869541325,
+      "wape_percent": 5.140089425383806,
+      "bias": -26.650224865896522,
+      "peak_mae": 46.149559677299465,
+      "mean_fit_seconds": 0.04829495151837667,
+      "fallbacks": 0,
+      "coverage_percent": 100.0,
+      "mean_width": 166.74168566452883
+    },
+    "ridge": {
+      "mae": 42.17843292703775,
+      "wape_percent": 7.065064141882369,
+      "bias": -26.675672521218022,
+      "peak_mae": 104.84070296760746,
+      "mean_fit_seconds": 0.0008718090830370784,
+      "fallbacks": 0,
+      "coverage_percent": 83.33333333333334,
+      "mean_width": 163.59750781905723
+    },
+    "lightgbm": {
+      "mae": 46.34457050248304,
+      "wape_percent": 7.762909631906707,
+      "bias": -26.75515603634862,
+      "peak_mae": 114.40690973605444,
+      "mean_fit_seconds": 0.004042965282375614,
+      "fallbacks": 0,
+      "coverage_percent": 91.66666666666666,
+      "mean_width": 181.13489856597766
+    },
+    "optuna": {
+      "mae": 37.45510593148858,
+      "wape_percent": 6.2738870907016056,
+      "bias": -21.403572856976947,
+      "peak_mae": 88.63642026177348,
+      "mean_fit_seconds": 0.0008552152430638671,
+      "fallbacks": 0,
+      "coverage_percent": 83.33333333333334,
+      "mean_width": 167.06105719667968
+    }
+  }
+}

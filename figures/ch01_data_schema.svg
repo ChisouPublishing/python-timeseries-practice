@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="480" viewBox="0 0 850 480" role="img" aria-label="同梱CSVは独立した5つのデータ。小売のみ店舗別の複数系列。">
+<style>text{font-family:"Hiragino Sans","Noto Sans JP",sans-serif;font-size:18px;fill:#172338}.title{font-size:20px;font-weight:700}.small{font-size:17px;fill:#4b5f75}</style>
+<rect x="4" y="4" width="406" height="130" rx="8" fill="#f4f8fc" stroke="#487daa" stroke-width="1.5"/>
+<text x="20" y="34" class="title">航空旅客数</text>
+<text x="20" y="68">月 × 旅客数（千人）</text>
+<text x="20" y="97">公開系列／月をキーにする</text>
+<rect x="440" y="4" width="406" height="130" rx="8" fill="#f4f8fc" stroke="#487daa" stroke-width="1.5"/>
+<text x="456" y="34" class="title">小売売上</text>
+<text x="456" y="68">店舗 × 日 × 売上・販促</text>
+<text x="456" y="97">店舗IDと日付の複合キー</text>
+<rect x="4" y="164" width="406" height="130" rx="8" fill="#f4f8fc" stroke="#487daa" stroke-width="1.5"/>
+<text x="20" y="194" class="title">設備センサー</text>
+<text x="20" y="228">分 × 振動・温度・正解ラベル</text>
+<text x="20" y="257">時刻がキー／単一設備</text>
+<rect x="440" y="164" width="406" height="130" rx="8" fill="#f4f8fc" stroke="#487daa" stroke-width="1.5"/>
+<text x="456" y="194" class="title">Webトラフィック</text>
+<text x="456" y="228">日 × PV</text>
+<text x="456" y="257">日付がキー／単一サイト</text>
+<rect x="4" y="324" width="406" height="130" rx="8" fill="#f4f8fc" stroke="#487daa" stroke-width="1.5"/>
+<text x="20" y="354" class="title">合成株価</text>
+<text x="20" y="388">平日 × 終値</text>
+<text x="20" y="417">日付がキー／単一系列</text>
+<text x="440" y="360" class="small">CSV間に外部キーはない。</text>
+<text x="440" y="392" class="small">日付一致だけでは結合しない。</text>
+<text x="440" y="424" class="small">単位・粒度もそれぞれ異なる。</text>
+</svg>

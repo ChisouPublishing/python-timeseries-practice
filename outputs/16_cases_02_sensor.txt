@@ -1,0 +1,6 @@
+手法             Precision Recall   F1   遅延(分)
+IsolationForest     0.959  0.967  0.963       2
+AutoEncoder         0.750  1.000  0.857       0
+和集合(OR)             0.750  1.000  0.857       0
+積集合(AND)            0.959  0.967  0.963       2
+図: figures/ch16_sensor.svg

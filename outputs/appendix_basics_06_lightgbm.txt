@@ -1,0 +1,4 @@
+説明変数: ['lag1', 'lag7', 'mean7', 'dow']
+LightGBM MAE=2.793
+前週同曜日 MAE=1.781
+分岐回数: {'lag1': 155, 'lag7': 207, 'mean7': 130, 'dow': 108}

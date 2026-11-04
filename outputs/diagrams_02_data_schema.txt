@@ -1,0 +1,3 @@
+図: figures/ch01_data_schema.svg
+図: figures/ch01_retail_er.svg
+図: figures/ch17_prediction_ledger.svg

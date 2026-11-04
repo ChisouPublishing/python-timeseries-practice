@@ -1,0 +1,20 @@
+{
+  "normal": {
+    "status": "model",
+    "prediction": 678.5478917409614
+  },
+  "delayed_latest_month": {
+    "status": "seasonal_fallback",
+    "prediction": 550.0
+  },
+  "all_missing": {
+    "status": "hold",
+    "prediction": null
+  },
+  "rejected": {
+    "duplicate_actual": true,
+    "missing_actual": true
+  },
+  "scored_rows": 144,
+  "scenario_note": "Controlled arrival-delay drill, not an observed government outage."
+}

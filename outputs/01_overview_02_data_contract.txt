@@ -1,0 +1,11 @@
+airpassengers.csv 行数=144 期間=1949-01-01 00:00:00〜1960-12-01 00:00:00
+  キー: month / 欠損: {'month': 0, 'passengers': 0}
+retail_sales.csv 行数=2193 期間=2023-01-01 00:00:00〜2024-12-31 00:00:00
+  キー: store_id, date / 欠損: {'date': 0, 'store_id': 0, 'sales': 24, 'promo': 0}
+sensor.csv 行数=10080 期間=2024-06-03 00:00:00〜2024-06-09 23:59:00
+  キー: timestamp / 欠損: {'timestamp': 0, 'vibration': 10, 'temperature': 0, 'label': 0}
+web_traffic.csv 行数=731 期間=2023-01-01 00:00:00〜2024-12-31 00:00:00
+  キー: date / 欠損: {'date': 0, 'pv': 0}
+stock.csv 行数=500 期間=2023-01-04 00:00:00〜2024-12-03 00:00:00
+  キー: date / 欠損: {'date': 0, 'close': 0}
+検査: キー欠損0・重複0・期待頻度の行欠落0

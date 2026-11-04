@@ -1,0 +1,12 @@
+ index unique_id         ds  AutoARIMA    AutoETS
+     0       air 1959-01-01 342.000000 348.200012
+     1       air 1959-02-01 319.700012 346.700012
+     2       air 1959-03-01 363.799988 395.899994
+
+モデル            MAE
+季節ナイーブ           71.2
+Prophet          31.2
+sktime           43.5
+statsforecast    68.6
+Darts            68.6
+図: figures/ch10_compare.svg

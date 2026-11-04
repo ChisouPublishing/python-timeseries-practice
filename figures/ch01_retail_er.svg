@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="310" viewBox="0 0 850 310" role="img" aria-label="小売CSVから重複を除いて得た店舗キー集合と日次売上の1対多の関係。売上の主キーは店舗IDと日付。">
+<style>text{font-family:"Hiragino Sans","Noto Sans JP",sans-serif;font-size:18px;fill:#172338}.title{font-size:20px;font-weight:700}.small{font-size:17px;fill:#4b5f75}</style>
+<rect x="4" y="50" width="310" height="160" rx="8" fill="#f4f8fc" stroke="#487daa" stroke-width="1.5"/>
+<text x="20" y="80" class="title">店舗キー集合（導出）</text>
+<text x="20" y="114">PK  store_id</text>
+<text x="20" y="143">小売CSVから重複を除く</text>
+<text x="20" y="172">配布マスタCSVは存在しない</text>
+<rect x="414" y="4" width="432" height="276" rx="8" fill="#f4f8fc" stroke="#487daa" stroke-width="1.5"/>
+<text x="430" y="34" class="title">日次売上（retail_sales.csv）</text>
+<text x="430" y="68">PK・FK  store_id</text>
+<text x="430" y="97">PK  date</text>
+<text x="430" y="126">sales：日次売上（欠損あり）</text>
+<text x="430" y="155">promo：販促予定の0 / 1</text>
+<text x="430" y="184">1店舗・1日につき1行</text>
+<path d="M314 130 H414 M328 119 V141 M400 130 L414 119 M400 130 L414 141" fill="none" stroke="#487daa" stroke-width="2"/>
+<text x="336" y="105">1：多</text>
+<text x="4" y="266" class="small">同じdateは3店舗に現れる。</text>
+<text x="4" y="297" class="small">salesの欠損でも行は残る。</text>
+</svg>

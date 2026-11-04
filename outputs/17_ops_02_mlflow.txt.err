@@ -1,0 +1,8 @@
+2026/11/04 00:34:51 INFO mlflow.agent.hint: Load the `instrumenting-with-mlflow-tracing` skill at /private/tmp/claude-501/-Users-you-Documents-makebooks/56e06dc2-a3af-43bc-b7fd-c303b2c88545/scratchpad/venv312/lib/python3.12/site-packages/mlflow/assistant/skills/instrumenting-with-mlflow-tracing/SKILL.md before writing any tracing code; it ships with this MLflow install. Set MLFLOW_DISABLE_AGENT_HINT=1 to silence this.
+2026/11/04 00:34:53 INFO mlflow.store.db.utils: Creating initial MLflow database tables...
+2026/11/04 00:34:53 INFO mlflow.store.db.utils: Updating database tables
+2026/11/04 00:34:54 INFO mlflow.tracking.fluent: Experiment with name 'web_pv_forecast' does not exist. Creating a new experiment.
+2026/11/04 00:34:57 WARNING mlflow.utils.environment: Encountered an unexpected error while inferring pip requirements (model URI: /var/folders/c9/6fw2t0bs44d3sbyy_mvw5x8w0000gn/T/tmpidtmm3bz/model/model.skops, flavor: sklearn). Fall back to return ['scikit-learn==1.7.2', 'skops==0.16.0']. Set logging level to DEBUG to see the full traceback. 
+2026/11/04 00:34:57 WARNING mlflow.utils.environment: Failed to resolve installed pip version. ``pip`` will be added to conda.yaml environment spec without a version specifier.
+Successfully registered model 'web_pv_forecast'.
+Created version '1' of model 'web_pv_forecast'.

@@ -1,0 +1,3 @@
+Holt-Winters乗法: alpha=0.364 beta=0.000 gamma=0.636 MAE=29.0
+ETS(A,A,M): alpha=0.360 beta=0.000 gamma=0.640 MAE=29.7
+ETS(M,A,M): alpha=0.783 beta=0.000 gamma=0.000 MAE=48.3

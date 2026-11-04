@@ -1,0 +1,111 @@
+{
+  "airpassengers.csv": {
+    "rows": 144,
+    "key": [
+      "month"
+    ],
+    "start": "1949-01-01 00:00:00",
+    "end": "1960-12-01 00:00:00",
+    "frequency": "MS",
+    "nulls": {
+      "month": 0,
+      "passengers": 0
+    },
+    "dtypes": {
+      "month": "datetime64[ns]",
+      "passengers": "int64"
+    }
+  },
+  "retail_sales.csv": {
+    "rows": 2193,
+    "key": [
+      "store_id",
+      "date"
+    ],
+    "start": "2023-01-01 00:00:00",
+    "end": "2024-12-31 00:00:00",
+    "frequency": "D",
+    "nulls": {
+      "date": 0,
+      "store_id": 0,
+      "sales": 24,
+      "promo": 0
+    },
+    "dtypes": {
+      "date": "datetime64[ns]",
+      "store_id": "int64",
+      "sales": "float64",
+      "promo": "int64"
+    },
+    "stores": {
+      "1": {
+        "rows": 731,
+        "missing_sales": 8
+      },
+      "2": {
+        "rows": 731,
+        "missing_sales": 8
+      },
+      "3": {
+        "rows": 731,
+        "missing_sales": 8
+      }
+    }
+  },
+  "sensor.csv": {
+    "rows": 10080,
+    "key": [
+      "timestamp"
+    ],
+    "start": "2024-06-03 00:00:00",
+    "end": "2024-06-09 23:59:00",
+    "frequency": "min",
+    "nulls": {
+      "timestamp": 0,
+      "vibration": 10,
+      "temperature": 0,
+      "label": 0
+    },
+    "dtypes": {
+      "timestamp": "datetime64[ns]",
+      "vibration": "float64",
+      "temperature": "float64",
+      "label": "int64"
+    },
+    "anomaly_points": 120
+  },
+  "web_traffic.csv": {
+    "rows": 731,
+    "key": [
+      "date"
+    ],
+    "start": "2023-01-01 00:00:00",
+    "end": "2024-12-31 00:00:00",
+    "frequency": "D",
+    "nulls": {
+      "date": 0,
+      "pv": 0
+    },
+    "dtypes": {
+      "date": "datetime64[ns]",
+      "pv": "int64"
+    }
+  },
+  "stock.csv": {
+    "rows": 500,
+    "key": [
+      "date"
+    ],
+    "start": "2023-01-04 00:00:00",
+    "end": "2024-12-03 00:00:00",
+    "frequency": "B",
+    "nulls": {
+      "date": 0,
+      "close": 0
+    },
+    "dtypes": {
+      "date": "datetime64[ns]",
+      "close": "float64"
+    }
+  }
+}

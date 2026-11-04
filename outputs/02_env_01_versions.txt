@@ -1,0 +1,12 @@
+Python 3.12.11
+pandas       2.3.3
+numpy        2.2.6
+matplotlib   3.10.9
+statsmodels  0.15.0
+scikit-learn 1.7.2
+lightgbm     4.7.0
+torch        2.14.0
+1回目: [0.37454012 0.95071431 0.73199394]
+2回目: [0.37454012 0.95071431 0.73199394]
+一致: True
+default_rng(42): [ 0.3047 -1.04    0.7505]

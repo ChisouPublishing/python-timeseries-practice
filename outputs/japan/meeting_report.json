@@ -1,0 +1,30 @@
+[
+  {
+    "item_code": "356",
+    "item_name": "アイスクリーム・シャーベット",
+    "selected_before_test": "ets",
+    "test_mae": 69.97555213184233,
+    "test_wape_percent": 6.830214946983146,
+    "coverage_percent": 100.0,
+    "interval_mean_width": 463.9328297562385,
+    "baseline_test_mae": 60.333333333333336,
+    "needs_future_recheck": true,
+    "decision_after_test": "新候補の導入を保留し前年同月を維持",
+    "use": "全国の二人以上の世帯の支出動向の参考",
+    "not_supported": "店舗の発注数量・在庫削減・利益改善の推計"
+  },
+  {
+    "item_code": "352",
+    "item_name": "チョコレート",
+    "selected_before_test": "seasonal",
+    "test_mae": 27.833333333333332,
+    "test_wape_percent": 4.662199888330542,
+    "coverage_percent": 100.0,
+    "interval_mean_width": 166.0,
+    "baseline_test_mae": 27.833333333333332,
+    "needs_future_recheck": true,
+    "decision_after_test": "事前選択の基準予測を維持し別期間で再確認",
+    "use": "全国の二人以上の世帯の支出動向の参考",
+    "not_supported": "店舗の発注数量・在庫削減・利益改善の推計"
+  }
+]

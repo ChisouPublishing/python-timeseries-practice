@@ -1,0 +1,2 @@
+/private/tmp/claude-501/-Users-you-Documents-makebooks/56e06dc2-a3af-43bc-b7fd-c303b2c88545/scratchpad/venv312/lib/python3.12/site-packages/statsmodels/tsa/statespace/mlemodel.py:679: EstimationWarning: Non-stationary starting seasonal autoregressive Using zeros as starting parameters.
+  start_params = self.start_params

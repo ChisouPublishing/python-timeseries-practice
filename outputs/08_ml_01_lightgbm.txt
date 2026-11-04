@@ -1,0 +1,15 @@
+学習: 556 日 / テスト: 139 日（テストは未来側）
+季節ナイーブ MAE: 1392.3
+7日移動平均   MAE: 2165.1
+LightGBM      MAE: 1182.5 / RMSE: 1784.9 / MAPE: 7.9 %
+改善率（対 季節ナイーブ）: 15.1 %
+TimeSeriesSplit MAE: 986.0 ± 227.3
+ランダムKfold   MAE: 892.2 ± 64.6  ← 未来が学習に混ざる
+ma7      512
+sd28     544
+ma28     553
+month    619
+lag28    668
+sd7      727
+図: figures/ch08_forecast.svg
+図: figures/ch08_leak.svg
